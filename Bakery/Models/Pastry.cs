@@ -30,16 +30,16 @@ namespace Bakery
       int total = 0; 
       int remainingQty = 0;  //If -- after "B2G1" Deal is applied for >=1 group(s) of 3 -- the remaining Quantity is < 3, that num is saved here. 
       int numDealGroups=0;  //Saves result of 'Quantity/3' if 'Quantity%3 == 0'. (Number of Deal-applicable Item-triplets) 
-      if (this.DealApplies()==true) { 
+      if (this.DealApplies()==true) {  //Is true IFF Quantity >= 3. 
         if (Quantity % 3 == 0) {
           numDealGroups=Quantity/3; 
           remainingQty=0; 
-          total += (2 * BasePrice * numDealGroups);
+          total += (5 * numDealGroups);
         } else {
           remainingQty = Quantity%3; //Saves remainder of current Quantity #. 
           Quantity -= remainingQty; //Reduces 'Quantity' to a # evenly-divisible by 3 (for calculation on next line). 
           numDealGroups = Quantity/3; 
-          total = (2 * BasePrice * numDealGroups) + (BasePrice * remainingQty);
+          total = (5 * numDealGroups) + (BasePrice * remainingQty);
         } 
         //return total; 
       } else {
