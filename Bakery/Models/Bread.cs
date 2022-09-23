@@ -3,12 +3,6 @@ using System;
 /*     Business Logic ('Bread')     */ 
 namespace Bakery
 { 
-  /*
-  Pricing Deals--
-    Bread:  'Buy 2, get 1 free (every 3rd loaf of bread is free.).'  [A single loaf costs $5, two loaves costs $10, and three loaves cost $10.]
-    Pastry:  'Buy 1 for $2 or 3 for $5.'  [Four pastries costs $7, five pastries costs $9, and six pastries costs $10.]
-  */
-
   public class Bread{
     public int Quantity {get; set;} 
     public int BasePrice {get; set;}
@@ -31,7 +25,6 @@ namespace Bakery
       int remainingQty = 0;  //If -- after "B2G1" Deal is applied for >=1 group(s) of 3 -- the remaining Quantity is < 3, that num is saved here. 
       int numDealGroups=0;  //Saves result of 'Quantity/3' if 'Quantity%3 == 0'. (Number of Deal-applicable Item-triplets) 
       if (this.DealApplies()==true) { 
-        Console.WriteLine("(Bread) -- B2G1 Deal applied!");
         if (Quantity % 3 == 0) {
           numDealGroups=Quantity/3; 
           remainingQty=0; 
