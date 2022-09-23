@@ -10,7 +10,7 @@ namespace Bakery.Tests
     public void DealApplies_CheckCompatabilityWithPastryDeal_False()
     {
       Pastry test = new Pastry(2); 
-      Assert.AreEqual(false, test.DealApplies());
+      Assert.AreEqual(false, test.DealApplies()); 
     }
 
 /*
