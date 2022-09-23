@@ -20,9 +20,9 @@ namespace Bakery
 
     public bool DealApplies(){ 
       if(Quantity >= 3){
-        return false;
-      } else {
         return true;
+      } else {
+        return false;
       }
     }
 
