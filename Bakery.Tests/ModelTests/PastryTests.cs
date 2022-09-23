@@ -29,11 +29,11 @@ namespace Bakery.Tests
       Pastry six = new Pastry(6); 
       Pastry seven = new Pastry(7);
       Pastry eight = new Pastry(8); 
-      Assert.AreEqual(5, four.DetermineTotalPrice()); 
-      Assert.AreEqual(10, five.DetermineTotalPrice()); 
+      Assert.AreEqual(7, four.DetermineTotalPrice()); 
+      Assert.AreEqual(9, five.DetermineTotalPrice()); 
       Assert.AreEqual(10, six.DetermineTotalPrice()); 
-      Assert.AreEqual(15, seven.DetermineTotalPrice()); 
-      Assert.AreEqual(30, eight.DetermineTotalPrice()); 
+      Assert.AreEqual(12, seven.DetermineTotalPrice()); 
+      Assert.AreEqual(14, eight.DetermineTotalPrice()); 
     }
   }
 }
