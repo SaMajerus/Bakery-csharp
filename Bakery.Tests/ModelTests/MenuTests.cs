@@ -13,6 +13,17 @@ namespace Bakery.Tests
       Assert.AreEqual(false, test.DealApplies());
     }
 
+    [TestMethod]
+    public void DealApplies_UseBranchingToCheckBreadDealCompatability_True()
+    {
+      Bread test1 = new Bread(1);
+      Bread test2 = new Bread(2);
+      Bread test3 = new Bread(3);
+      Assert.AreEqual(false, test1.DealApplies());
+      Assert.AreEqual(false, test2.DealApplies());
+      Assert.AreEqual(true, test3.DealApplies());
+    }
+
     // [TestMethod]
     // public void DealApplies_CheckCompatabilityWithPastryDeal_False()
     // {
