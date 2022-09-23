@@ -27,7 +27,7 @@ namespace Bakery
     }
 
     public int DetermineTotalPrice(){ 
-      int total = 0; /*
+      int total = 0; 
       int remainingQty = 0;  //If -- after "B2G1" Deal is applied for >=1 group(s) of 3 -- the remaining Quantity is < 3, that num is saved here. 
       int numDealGroups=0;  //Saves result of 'Quantity/3' if 'Quantity%3 == 0'. (Number of Deal-applicable Item-triplets) 
       if (this.DealApplies()==true) { 
@@ -44,7 +44,7 @@ namespace Bakery
         //return total; 
       } else {
         total = (BasePrice * Quantity); 
-      } */
+      } 
       return total;
 
     }
