@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
+using Bakery.Models;
 
 namespace Bakery.Tests
 {
@@ -7,11 +7,18 @@ namespace Bakery.Tests
   public class MenuTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void DealApplies_CheckCompatabilityWithBreadDeal_False()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      BreadOrder test = new BreadOrder(3);
+      Assert.AreEqual(true, test.DealApplies());
     }
+
+    // [TestMethod]
+    // public void DealApplies_CheckCompatabilityWithPastryDeal_False()
+    // {
+    //   BreadOrder test = new BreadOrder(3);
+    //   Assert.AreEqual(true, test.DealApplies());
+    // }
 
   }
 }
