@@ -10,7 +10,7 @@ namespace Bakery.Tests
     public void DealApplies_CheckCompatabilityWithBreadDeal_False()
     {
       Bread test = new Bread(3);
-      Assert.AreEqual(true, test.DealApplies());
+      Assert.AreEqual(false, test.DealApplies());
     }
 
     // [TestMethod]
