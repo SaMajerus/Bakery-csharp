@@ -25,7 +25,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void DetermineTotalPrice_UseBranchingToMakeCalculationsBasedOnQuantity_True()
+    public void DetermineTotalPrice_UseBranchingToMakeCalculationsBasedOnQuantity_Int()
     { 
       Bread test1 = new Bread(1); 
       Bread test2 = new Bread(2); 

@@ -21,10 +21,8 @@ namespace Bakery.Tests
       Assert.AreEqual(true, test2.DealApplies()); 
     }
 
-
-
     [TestMethod]
-    public void DetermineTotalPrice_UseBranchingToMakeCalculationsBasedOnQuantity_True()
+    public void DetermineTotalPrice_UseBranchingToMakeCalculationsBasedOnQuantity_Int()
     { 
       Pastry four = new Pastry(4); 
       Pastry five = new Pastry(5); 
@@ -36,6 +34,6 @@ namespace Bakery.Tests
       Assert.AreEqual(10, six.DetermineTotalPrice()); 
       Assert.AreEqual(15, seven.DetermineTotalPrice()); 
       Assert.AreEqual(30, eight.DetermineTotalPrice()); 
-    }
+    } 
   }
 }
