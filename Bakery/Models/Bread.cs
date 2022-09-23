@@ -45,10 +45,7 @@ namespace Bakery
       } else {
         total = (BasePrice * Quantity); 
       }
-      return total;
-
-    }
-    
+      return total; 
+    } 
   }
-
 }
