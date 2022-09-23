@@ -19,7 +19,7 @@ namespace Bakery
     }
 
     public bool DealApplies(){ 
-      return true;
+      return false;
       // if(Quantity >= 3){
       //   return false; 
       // } else {
