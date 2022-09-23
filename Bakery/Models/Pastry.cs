@@ -15,18 +15,18 @@ namespace Bakery
 
     public Pastry(int quantity){
       Quantity = quantity; 
-      BasePrice = 2;  //Price IFF (if and only if) Quantity=1.
+      BasePrice = 2;  //Price IFF (if and only if) Quantity=1. 
     }
 
-/*
     public bool DealApplies(){ 
-      if(Quantity >= 3){
-        return false;
-      } else {
-        return true;
-      }
+      return true;
+      // if(Quantity >= 3){
+      //   return false; 
+      // } else {
+      //   return true;
+      // }
     }
-
+/*
     public int DetermineTotalPrice(){ 
       int total = 0; 
       int remainingQty = 0;  //If -- after "B2G1" Deal is applied for >=1 group(s) of 3 -- the remaining Quantity is < 3, that num is saved here. 
@@ -49,7 +49,6 @@ namespace Bakery
       return total;
 
     }
-
 */
 
   } 
