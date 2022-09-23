@@ -33,11 +33,11 @@ namespace Bakery.Tests
       Bread test3 = new Bread(3); 
       Bread test4 = new Bread(4);
       Bread test5 = new Bread(8); 
-      Assert.AreEqual(false, test1.DetermineTotalPrice()); 
-      Assert.AreEqual(false, test2.DetermineTotalPrice()); 
-      Assert.AreEqual(true, test3.DetermineTotalPrice()); 
-      Assert.AreEqual(true, test4.DetermineTotalPrice()); 
-      Assert.AreEqual(true, test5.DetermineTotalPrice()); 
+      Assert.AreEqual(5, test1.DetermineTotalPrice()); 
+      Assert.AreEqual(10, test2.DetermineTotalPrice()); 
+      Assert.AreEqual(10, test3.DetermineTotalPrice()); 
+      Assert.AreEqual(15, test4.DetermineTotalPrice()); 
+      Assert.AreEqual(30, test5.DetermineTotalPrice()); 
     } 
 
     // [TestMethod]
