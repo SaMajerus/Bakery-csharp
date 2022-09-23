@@ -18,7 +18,7 @@ namespace Bakery.Tests
     public void DealApplies_UseBranchingToCheckPastryDealCompatability_True()
     {
       Pastry test2 = new Pastry(3);
-      Assert.AreEqual(true, test2.DealApplies());
+      Assert.AreEqual(true, test2.DealApplies()); 
     }
 
 
