@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery.Models;
+using Bakery;
 
 namespace Bakery.Tests
 {
@@ -9,7 +9,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void DealApplies_CheckCompatabilityWithBreadDeal_False()
     {
-      BreadOrder test = new BreadOrder(3);
+      Bread test = new Bread(3);
       Assert.AreEqual(true, test.DealApplies());
     }
 

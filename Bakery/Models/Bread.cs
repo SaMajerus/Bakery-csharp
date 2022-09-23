@@ -13,7 +13,7 @@ namespace Bakery
     public int Quantity {get; set;} 
     public int BreadPrice {get; set;}
 
-    public BreadOrder(int quantity){
+    public Bread(int quantity){
       Quantity = quantity; 
       BreadPrice = 5;  //Price IFF (if and only if) Quantity=1.
     }
@@ -25,22 +25,5 @@ namespace Bakery
     }
     
   }
-
-/*
-  public class Pastry{
-    public int Quantity {get; set;} 
-    public int PastryPrice {get; set;}
-
-    public PastryOrder(int quantity){
-      Quantity = quantity; 
-      PastryPrice = 2.00;  //Price IFF (if and only if) Quantity=1.
-    }
-
-    public bool DealApplies(){
-      return false;
-    }
-    
-  }
-*/ 
 
 }

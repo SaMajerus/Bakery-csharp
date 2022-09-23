@@ -13,7 +13,7 @@ namespace Bakery
     public int Quantity {get; set;} 
     public int PastryPrice {get; set;}
 
-    public PastryOrder(int quantity){
+    public Pastry(int quantity){
       Quantity = quantity; 
       PastryPrice = 2;  //Price IFF (if and only if) Quantity=1.
     }
