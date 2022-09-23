@@ -11,7 +11,7 @@ namespace Bakery
       int qtyBread = 0; 
       int qtyPastry = 0; 
 
-      Console.WriteLine("Welcome to our Bakery!"); 
+      Console.WriteLine("Welcome to Pierre's Bakery!"); 
       Console.WriteLine("Baseline Prices:  ");
       Console.WriteLine("1 Loaf of Bread - $5");
       Console.Write("1 Pastry - $2 \n\n");
