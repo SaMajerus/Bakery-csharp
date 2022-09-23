@@ -22,21 +22,20 @@ namespace Bakery.Tests
     }
 
 
-/*
+
     [TestMethod]
     public void DetermineTotalPrice_UseBranchingToMakeCalculationsBasedOnQuantity_True()
     { 
-      Pastry test1 = new Pastry(1); 
-      Pastry test2 = new Pastry(2); 
-      Pastry test3 = new Pastry(3); 
-      Pastry test4 = new Pastry(4);
-      Pastry test5 = new Pastry(8); 
-      Assert.AreEqual(5, test1.DetermineTotalPrice()); 
-      Assert.AreEqual(10, test2.DetermineTotalPrice()); 
-      Assert.AreEqual(10, test3.DetermineTotalPrice()); 
-      Assert.AreEqual(15, test4.DetermineTotalPrice()); 
-      Assert.AreEqual(30, test5.DetermineTotalPrice()); 
+      Pastry four = new Pastry(4); 
+      Pastry five = new Pastry(5); 
+      Pastry six = new Pastry(6); 
+      Pastry seven = new Pastry(7);
+      Pastry eight = new Pastry(8); 
+      Assert.AreEqual(5, four.DetermineTotalPrice()); 
+      Assert.AreEqual(10, five.DetermineTotalPrice()); 
+      Assert.AreEqual(10, six.DetermineTotalPrice()); 
+      Assert.AreEqual(15, seven.DetermineTotalPrice()); 
+      Assert.AreEqual(30, eight.DetermineTotalPrice()); 
     }
-*/
   }
 }
