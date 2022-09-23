@@ -22,30 +22,32 @@ namespace Bakery
 
       Console.WriteLine("How many Loaves of Bread do you want?");
       qtyBread = int.Parse(Console.ReadLine());
-      Console.WriteLine("Okay... and how many Pastries?");
+      Console.WriteLine("Okay. How about Pastries?");
       qtyPastry = int.Parse(Console.ReadLine()); 
-      Console.WriteLine("\n"); 
-      Console.WriteLine("Alright! Thank you for your purchase!");
+      Console.WriteLine("Alright, we'll get everything started for you.  Here's your receipt!");
       
       Bread breadOrder = new Bread(qtyBread); 
       Pastry pastryOrder = new Pastry(qtyPastry); 
       int breadTotalPrice = breadOrder.DetermineTotalPrice();
-      int pastryTotalPrice = breadOrder.DetermineTotalPrice();
+      int pastryTotalPrice = pastryOrder.DetermineTotalPrice();
 
-      Console.WriteLine("Your Receipt-- ");
+      Console.Write("\n\nYour Order (with Totals)-- \n");
+      Console.Write("Bread:  "); 
       if(qtyBread==1){
-        Console.WriteLine(qtyBread + "Bread Loaf =  $" + breadTotalPrice);  
+        Console.Write(qtyBread + " Bread Loaf =  $" + breadTotalPrice);  
       } else {
-        Console.WriteLine(qtyBread + "Bread Loaves =  $" + breadTotalPrice);
+        Console.Write(qtyBread + " Bread Loaves =  $" + breadTotalPrice);
       }
 
       if(qtyPastry==1){
-        Console.WriteLine(qtyPastry + "Pastry =  $" + pastryTotalPrice);  
+        Console.Write("\nPastry:  "); 
+        Console.WriteLine(qtyPastry + " Pastry =  $" + pastryTotalPrice);  
       } else { 
-        Console.WriteLine(qtyPastry + "Pastries =  $" + pastryTotalPrice);
+        Console.Write("\nPastries:  ");
+        Console.WriteLine(qtyPastry + " Pastries =  $" + pastryTotalPrice);
       } 
       Console.WriteLine("Grand Total:  $" + (breadTotalPrice + pastryTotalPrice));
-      Console.Write("\n\nGood Day!");
+      Console.Write("\n\n\nThank you, come again!");
     }
   }
 }

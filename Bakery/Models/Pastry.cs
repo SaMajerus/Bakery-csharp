@@ -31,6 +31,7 @@ namespace Bakery
       int remainingQty = 0;  //If -- after "B2G1" Deal is applied for >=1 group(s) of 3 -- the remaining Quantity is < 3, that num is saved here. 
       int numDealGroups=0;  //Saves result of 'Quantity/3' if 'Quantity%3 == 0'. (Number of Deal-applicable Item-triplets) 
       if (this.DealApplies()==true) {  //Is true IFF Quantity >= 3. 
+        Console.WriteLine("(Pastry) -- B2G1 Deal applied!");
         if (Quantity % 3 == 0) {
           numDealGroups=Quantity/3; 
           remainingQty=0; 
