@@ -6,6 +6,7 @@ namespace Bakery.Tests
   [TestClass]
   public class MenuTests
   {
+    //Bread class tests
     [TestMethod]
     public void DealApplies_CheckCompatabilityWithBreadDeal_False()
     {
@@ -23,6 +24,21 @@ namespace Bakery.Tests
       Assert.AreEqual(false, test2.DealApplies());
       Assert.AreEqual(true, test3.DealApplies());
     }
+
+    [TestMethod]
+    public void DetermineTotalPrice_UseBranchingToMakeCalculationsBasedOnQuantity_True()
+    { 
+      Bread test1 = new Bread(1); 
+      Bread test2 = new Bread(2); 
+      Bread test3 = new Bread(3); 
+      Bread test4 = new Bread(4);
+      Bread test5 = new Bread(8); 
+      Assert.AreEqual(false, test1.DetermineTotalPrice()); 
+      Assert.AreEqual(false, test2.DetermineTotalPrice()); 
+      Assert.AreEqual(true, test3.DetermineTotalPrice()); 
+      Assert.AreEqual(true, test4.DetermineTotalPrice()); 
+      Assert.AreEqual(true, test5.DetermineTotalPrice()); 
+    } 
 
     // [TestMethod]
     // public void DealApplies_CheckCompatabilityWithPastryDeal_False()
