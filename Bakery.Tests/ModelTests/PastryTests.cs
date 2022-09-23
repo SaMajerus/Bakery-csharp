@@ -34,6 +34,6 @@ namespace Bakery.Tests
       Assert.AreEqual(10, six.DetermineTotalPrice()); 
       Assert.AreEqual(15, seven.DetermineTotalPrice()); 
       Assert.AreEqual(30, eight.DetermineTotalPrice()); 
-    } 
-  } 
+    }
+  }
 }
