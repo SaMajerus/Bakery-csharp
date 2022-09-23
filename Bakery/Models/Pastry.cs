@@ -19,12 +19,11 @@ namespace Bakery
     }
 
     public bool DealApplies(){ 
-      return false;
-      // if(Quantity >= 3){
-      //   return false; 
-      // } else {
-      //   return true;
-      // }
+      if(Quantity >= 3){
+        return true; 
+      } else {
+        return false;
+      }
     }
 /*
     public int DetermineTotalPrice(){ 
