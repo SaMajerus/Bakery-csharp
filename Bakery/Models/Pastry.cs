@@ -40,16 +40,11 @@ namespace Bakery
           Quantity -= remainingQty; //Reduces 'Quantity' to a # evenly-divisible by 3 (for calculation on next line). 
           numDealGroups = Quantity/3; 
           total = (5 * numDealGroups) + (BasePrice * remainingQty);
-        } 
-        //return total; 
+        }  
       } else {
         total = (BasePrice * Quantity); 
       } 
       return total;
-
     }
-
-
   } 
-
 }

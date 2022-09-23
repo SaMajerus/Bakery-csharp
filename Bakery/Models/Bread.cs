@@ -41,7 +41,6 @@ namespace Bakery
           numDealGroups = Quantity/3; 
           total = (2 * BasePrice * numDealGroups) + (BasePrice * remainingQty);
         } 
-        //return total; 
       } else {
         total = (BasePrice * Quantity); 
       }
