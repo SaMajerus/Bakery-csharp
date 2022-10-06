@@ -25,8 +25,8 @@ namespace Bakery
       qtyPastry = int.Parse(Console.ReadLine()); 
       Console.WriteLine("Alright, we'll get everything started for you.  Here's your receipt!");
       
-      Bread breadOrder = new Bread(qtyBread); 
-      Pastry pastryOrder = new Pastry(qtyPastry); 
+      Bread breadOrder = new Bread(qtyBread, 5); 
+      Pastry pastryOrder = new Pastry(qtyPastry, 2); 
       int breadTotalPrice = breadOrder.DetermineTotalPrice();
       int pastryTotalPrice = pastryOrder.DetermineTotalPrice();
 
